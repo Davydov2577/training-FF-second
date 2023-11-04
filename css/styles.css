@@ -149,6 +149,7 @@ img {
     color: rgba(255, 255, 255, 0.50);
     font-size: 12px;
     line-height: 1.33;
+    /* letter-spacing: -0.04em; */
 }
 
 .signUp-last-text a {
@@ -157,16 +158,23 @@ img {
 }
 
 
-.signUp-list {
+.wrap-image {
     display: none;
 }
 
 
 
-/* ================= END MEDIA 320 ==================== */
+/* ================= END MEDIA 320 ================= */
 
 
-@media screen and (min-width: 375px) {}
+@media screen and (min-width: 375px) {
+
+    .container {
+        max-width: 375px;
+        padding: 0 20px;
+        margin: 0 auto;
+    }
+}
 
 
 /* ============= MEDIA 768 ========================== */
@@ -175,8 +183,7 @@ img {
 
     .container {
         max-width: 768px;
-        padding-left: 15px;
-        padding-right: 15px;
+        padding: 0 32px;
     }
 
     .signUp {
@@ -234,15 +241,18 @@ img {
 
 /* ================ END MEDIA 768 ===================== */
 
-/* ================== MEDIA 1280 ============================ */
+/* ================== MEDIA 1280 ====================== */
 
 
 @media screen and (min-width: 1280px) {
 
     .container {
         max-width: 1280px;
-        padding-left: 15px;
-        padding-right: 15px;
+        padding: 0 100px;
+    }
+
+    .signUp {
+        padding-top: 150px;
     }
 
     .wrap-signUp {
@@ -274,22 +284,12 @@ img {
     }
 
     .wrap-image {
-        align-items: flex-start;
+        display: flex;
         width: 540px;
-        align-items: start;
     }
 
-    .signUp-list {
-        display: flex;
-    }
 
-    /* вниз бекграунд - об'єктива */
-    .signUp-list-obj {
-        display: flex;
-        align-items: end;
-    }
-
-    .signUp-item-obj {
+    .signUp-obj {
         border-radius: 1000px;
         background: #BEA69E;
         width: 180px;
@@ -299,25 +299,40 @@ img {
         align-items: center;
         padding-top: 76px;
         padding-right: 19px;
+        margin-right: 20px;
+
+        align-self: flex-end;
     }
 
-    .signUp-list-nikon {}
 
-    .signUp-item-nikon {
+    .signUp-nikon {
         width: 340px;
         height: 540px;
         border-radius: 1000px;
         background: #1D1D1D;
 
-
         display: flex;
-        /* align-items: center; */
-        justify-content: center;
 
         padding: 156px 50px 88px;
     }
 
     .signUp-img-nikon {}
+
+
+}
+
+
+/* ================ END MEDIA 1280 ==================== */
+
+/* ================== MEDIA 1440 ====================== */
+
+
+@media screen and (min-width: 1440px) {
+
+    .container {
+        max-width: 1280px;
+        padding: 0 100px;
+    }
 
 
 }
